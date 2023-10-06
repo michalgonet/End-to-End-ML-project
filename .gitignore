@@ -2,3 +2,4 @@
 e2eML_venv
 __pycache__
 CNN_Classifier/End_to_End_ML_project.egg-info
+logs

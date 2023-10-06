@@ -10,8 +10,9 @@ list_of_files = [
     f'{project_name}/__init__.py',
     f'{project_name}/modules/__init__.py',
     f'{project_name}/utils/__init__.py',
+    f'{project_name}/utils/common.py',
     f'{project_name}/config/__init__.py',
-    f'{project_name}/utils/configuration.py',
+    f'{project_name}/config/configuration.py',
     f'{project_name}/pipeline/__init__.py',
     f'{project_name}/entity/__init__.py',
     f'{project_name}/constants/__init__.py',
@@ -22,6 +23,7 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html"
+    "main.py"
 ]
 
 for file_path in list_of_files:
