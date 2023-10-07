@@ -73,7 +73,6 @@ def create_directories(path_to_directories: list, verbose: bool = True):
             logger.info(f"created directory at: {path}")
 
 
-@ensure_annotations
 def save_json(path: Path, data: dict) -> None:
     """
     Save dictionary as json file for selected path
@@ -87,10 +86,10 @@ def save_json(path: Path, data: dict) -> None:
     -------
     None
     """
-    with open(path, 'w') as f:
+    with open(path, "w") as f:
         json.dump(data, f, indent=4)
 
-    logger.info(f'json file saved at: {path}')
+    logger.info(f"json file saved at: {path}")
 
 
 @ensure_annotations
