@@ -7,7 +7,7 @@ logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
 log_dir = "logs"
 log_filepath = Path(log_dir) / "running_logs.log"
-log_filepath.parent.mkdir(parents=True, exist_ok=True)
+log_filepath.parent.mkdir(exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,

@@ -1,27 +1,27 @@
 from CNN_Classifier.config.configuration import ConfigurationManager
-from CNN_Classifier.modules.data_ingestion import DataIngestion
+from CNN_Classifier.modules.prepare_base_model import PrepareBaseModel
 from CNN_Classifier import logger
 
 STAGE_NAME = "Data Ingestion stage"
 
 
-class DataIngestionTrainingPipeline:
+class PrepareBaseModelTrainingPipeline:
     def __init__(self):
         pass
 
     @staticmethod
     def main():
         config = ConfigurationManager()
-        data_ingestion_config = config.get_data_ingestion_config()
-        data_ingestion = DataIngestion(config=data_ingestion_config)
-        data_ingestion.download_file()
-        data_ingestion.extract_zip_file()
+        base_model_config = config.get_prepare_base_model_config()
+        base_model = PrepareBaseModel(config=base_model_config)
+        base_model.get_base_model()
+        base_model.update_base_model()
 
 
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = DataIngestionTrainingPipeline()
+        obj = PrepareBaseModelTrainingPipeline()
         obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:

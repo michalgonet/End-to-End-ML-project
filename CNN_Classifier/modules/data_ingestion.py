@@ -16,7 +16,6 @@ class DataIngestion:
                 url=self.config.source_URL,
                 filename=self.config.local_data_file,
             )
-            # TODO: THERE IS A PROBLEM WITH DOWNLOAD FILE FOR NOW THE FILE IS DOWNLOADED MANUALLY
             logger.info(f'{filename} downloaded with following info {headers}')
         else:
             logger.info(f'Files already exists of size: {get_size(Path(self.config.local_data_file))}')
