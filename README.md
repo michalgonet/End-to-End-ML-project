@@ -44,3 +44,9 @@ To display dvc pipeline
 ```shell
 dvc dag
 ```
+
+
+To run local www with application 
+```shell
+python app.py
+```
