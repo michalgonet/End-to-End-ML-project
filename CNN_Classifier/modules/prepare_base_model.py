@@ -2,7 +2,7 @@ from pathlib import Path
 
 import tensorflow as tf
 
-from CNN_Classifier.config.configuration import PrepareBaseModelConfig
+from CNN_Classifier.entity.config_entity import PrepareBaseModelConfig
 
 
 class PrepareBaseModel:

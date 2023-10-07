@@ -21,5 +21,11 @@ How to build each stage:
 2) Update entity in project/entity/config_entity.py with config.yaml variable
 3) Expand the ConfigurationManager class in project/config/configuration.py
 4) Create a module for new stage
-5) Create the pipeline for new stage 
-6) Update main.py for new stage
+5) *Create the pipeline for new stage 
+6) *Update main.py for new stage
+
+
+To see training results in tensorboard type:
+```shell
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+```
