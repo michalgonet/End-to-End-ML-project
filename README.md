@@ -29,3 +29,18 @@ To see training results in tensorboard type:
 ```shell
 tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
 ```
+
+To run full pipeline run:
+```shell
+python - m main
+```
+
+To run dvc pipeline run:
+```shell
+dvc repro
+```
+
+To display dvc pipeline 
+```shell
+dvc dag
+```
