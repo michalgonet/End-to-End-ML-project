@@ -50,3 +50,4 @@ To run local www with application
 ```shell
 python app.py
 ```
+For training from localhost type in browser `127.0.0.1/train`
