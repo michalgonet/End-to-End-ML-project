@@ -13,3 +13,13 @@ Tech stack inlcuded in this project:
 9. DVC (MLOps Tool) - For pipeline tracking and implementation
 10. Docker
 11. Final CI/CD Deployment on AWS and Azure
+
+
+
+How to build each stage:
+1) Update config/config.yaml
+2) Update entity in project/entity/config_entity.py with config.yaml variable
+3) Expand the ConfigurationManager class in project/config/configuration.py
+4) Create a module for new stage
+5) Create the pipeline for new stage 
+6) Update main.py for new stage
